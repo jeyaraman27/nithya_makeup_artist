@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nithya Makeup Artist</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-container">
+        <div class="nithya-mobile">
+          <i class="fas fa-phone-volume"></i> +91 97512 30377
+        </div>
+        <div class="header-icons">
+          <a
+            href="https://www.instagram.com/nithyamakeupartist_j"
+            target="_blank"
+          >
+            <i class="fab fa-instagram black"></i>
+          </a>
+          <a href="https://www.youtube.com/@NithyaMakeupArtist" target="_blank">
+            <i class="fab fa-youtube black"></i>
+          </a>
+          <a href="https://wa.me/9751230377" target="_blank">
+            <i class="fab fa-whatsapp black"></i>
+          </a>
+          <a href="mailto:nithyaglowshine@gmail.com" target="_blank">
+            <i class="fab fa-google black"></i>
+          </a>
+          <!-- <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+              <i class="fab fa-linkedin black"></i>
+            </a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank">
+              <i class="fab fa-facebook-f black"></i>
+            </a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="top-bar-container">
+        <div>
+          <img class="logo" src="images/logo.jpg" alt="logo" />
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav class="nav">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="services.html">SERVICES</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="contact.html">CONTACT US</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <div class="slider-container">
+      <div class="slides">
+        <div class="slide"><img src="images/2.jpeg" alt="Makeup Work" /></div>
+        <div class="slide"><img src="images/9.jpeg" alt="Bridal Makeup" /></div>
+        <div class="slide">
+          <img src="images/13.jpeg" alt="Professional Makeup" />
+        </div>
+        <div class="slide">
+          <img src="images/17.jpeg" alt="Professional Makeup" />
+        </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="container mt-4">
+      <h3 class="section-title">About Us</h3>
+      <div class="divider"></div>
+      <div class="card about-card">
+        <div class="row g-0">
+          <div class="col-md-6 p-4">
+            <h4>Nithya Jeya Raman</h4>
+            <p>
+              Welcome to my world of beauty and transformation!
+              <strong>I'm Nithya, a Certified Makeup Artist</strong> with a
+              passion for enhancing natural beauty and boosting confidence
+              through the art of makeup. My journey in the makeup industry began
+              with a deep love for creativity and self-expression, which led me
+              to master the latest techniques and trends.
+            </p>
+            <p>
+              Whether it’s bridal, party, fashion, or everyday makeup, I
+              specialize in creating flawless, customized looks that complement
+              each individual's unique features. My goal is to ensure that every
+              client feels radiant, empowered, and the best version of
+              themselves.
+            </p>
+            <p>
+              Join me on this beautiful journey, and let’s create magic
+              together!
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="your-image.jpg" alt="Makeup Artist" class="about-img" />
+          </div>
+        </div>
+        <div class="section-divider"></div>
+        <div class="row g-0 mt-4">
+          <div class="col-md-6 p-4">
+            <video
+              controls
+              class="gallery-video"
+              oncontextmenu="return false;"
+              controlsList="nodownload"
+            >
+              <source src="videos/about_me.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-md-6">
+            <h4>My Certification from PLUSH Academy</h4>
+            <p>
+              I successfully completed my professional makeup artist
+              certification at
+              <b>PLUSH Academy in Chennai</b>, under the guidance of
+              <b>Santhosi Ma'am</b>. She is an esteemed makeup artist and has
+              worked with actors in the film industry.
+            </p>
+            <p>
+              During my training, I learned advanced makeup techniques,
+              professional skills, and industry trends that helped shape my
+              career. It was an incredible experience to be mentored by such a
+              talented artist.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Gallery -->
+    <div class="container mt-4">
+      <div class="row g-3 mb-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <img src="images/1.jpeg" alt="Celebrity 1" class="gallery-img" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <img src="images/3.jpeg" alt="Celebrity 2" class="gallery-img" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <img src="images/8.jpeg" alt="Celebrity 3" class="gallery-img" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <img src="images/11.jpeg" alt="Celebrity 4" class="gallery-img" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <img src="images/7.jpeg" alt="Celebrity 5" class="gallery-img" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <img src="images/10.jpeg" alt="Celebrity 6" class="gallery-img" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <img src="images/13.jpeg" alt="Celebrity 7" class="gallery-img" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <img src="images/15.jpeg" alt="Celebrity 8" class="gallery-img" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <img src="images/16.jpeg" alt="Celebrity 9" class="gallery-img" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <img src="images/18.jpeg" alt="Celebrity 10" class="gallery-img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- Services -->
+    <div class="container mt-4">
+      <h3 class="section-title">Our Services</h3>
+      <div class="divider"></div>
+      <div class="row service-card">
+        <!-- Left Content -->
+        <div class="col-lg-6 col-12">
+          <p>
+            At <b>Nithya Makeup Artist,</b> I specialize in creating flawless
+            and stunning makeovers for every occasion. As a
+            <b>Certified Makeup Artist,</b> I offer a wide range of services,
+            including <b>bridal, party, and special event makeup,</b> ensuring
+            that each client looks and feels their best.
+          </p>
+          <p>
+            Using high-quality products and modern techniques, I craft makeup
+            looks that enhance natural beauty while reflecting individual style.
+            My services are available at competitive prices, providing
+            professional and elegant transformations for all your special
+            moments.
+          </p>
+          <p>
+            If you're looking for a
+            <b>beautiful and professional makeover,</b> book your appointment
+            today with <b>Nithya Makeup Artist!</b>
+          </p>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-lg-6 col-12 mt-4 mt-lg-0 text-center">
+          <img src="images/5.jpeg" alt="Makeup Artist" class="service-img" />
+        </div>
+      </div>
+
+      <!-- Services Offered -->
+      <div class="row mt-5">
+        <div class="col-lg-6 col-12">
+          <h5 class="section-title">Services Offered At</h5>
+          <div class="divider"></div>
+          <ul class="service-card">
+            <li>Tenkasi</li>
+            <li>Chennai</li>
+            <li>Madurai</li>
+            <li>Coimbatore and all over TamilNadu</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6 col-12 mt-4 mt-lg-0">
+          <h5 class="section-title">We Specialize In These Services:</h5>
+          <div class="divider"></div>
+          <ul class="service-card">
+            <li>Bridal Makeup</li>
+            <li>Bridesmaid Makeover</li>
+            <li>Groom Makeup</li>
+            <li>HD Makeup</li>
+            <li>HD Pro Makeup</li>
+            <li>Airbrush Makeup</li>
+            <li>Commercial Makeup</li>
+            <li>Party Makeup</li>
+            <li>Saree Draping</li>
+            <li>Hair Styling (100 Different Styles)</li>
+            <li>Nail Art</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- Gallery -->
+    <div class="container mt-4">
+      <h3 class="section-title">Gallery</h3>
+      <div class="divider"></div>
+      <!-- Image Gallery Row -->
+      <div class="container mt-4">
+        <!-- <h5 class="section-title">Images</h5> -->
+        <!-- <div class="divider"></div> -->
+        <div class="row g-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/1.jpeg" alt="Celebrity 1" class="gallery-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/3.jpeg" alt="Celebrity 2" class="gallery-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/8.jpeg" alt="Celebrity 3" class="gallery-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/11.jpeg" alt="Celebrity 4" class="gallery-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/7.jpeg" alt="Celebrity 4" class="gallery-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/10.jpeg" alt="Celebrity 5" class="gallery-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/13.jpeg" alt="Celebrity 6" class="gallery-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/15.jpeg" alt="Celebrity 7" class="gallery-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/16.jpeg" alt="Celebrity 8" class="gallery-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/18.jpeg" alt="Celebrity 9" class="gallery-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Gallery Row -->
+      <div class="container mt-4">
+        <h5 class="section-title">Videos</h5>
+        <div class="divider"></div>
+        <div class="row g-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <video
+              controls
+              class="gallery-video"
+              oncontextmenu="return false;"
+              controlsList="nodownload"
+            >
+              <source src="video1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <video
+              controls
+              class="gallery-video"
+              oncontextmenu="return false;"
+              controlsList="nodownload"
+            >
+              <source src="video2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <video
+              controls
+              class="gallery-video"
+              oncontextmenu="return false;"
+              controlsList="nodownload"
+            >
+              <source src="video3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <video
+              controls
+              class="gallery-video"
+              oncontextmenu="return false;"
+              controlsList="nodownload"
+            >
+              <source src="video3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hair style -->
+      <div class="container mt-4">
+        <h5 class="section-title">Hairstyles</h5>
+        <div class="divider"></div>
+        <div class="row g-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/H1.jpeg" alt="Hair 1" class="gallery-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/H2.jpeg" alt="Hair 2" class="gallery-img" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="images/H3.jpeg" alt="Hair 3" class="gallery-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- Contact -->
+    <div class="contact-container">
+      <h3 class="section-title">Contact Us</h3>
+      <div class="divider"></div>
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <div class="contact-card">
+          <i class="fa fa-location-dot black contact-card-icons"></i>
+          <h4>Our Location</h4>
+          <p>Neelankarai, Chennai-600041</p>
+        </div>
+        <div class="contact-card">
+          <i class="fa fa-g black contact-card-icons"></i>
+          <h4>Email Address</h4>
+          <p>nithyaglowshine@gmail.com</p>
+        </div>
+        <div class="contact-card">
+          <i class="fa fa-phone-volume black contact-card-icons"></i>
+          <h4>Phone Number</h4>
+          <p>+91 97512 30377</p>
+        </div>
+        <div class="contact-card">
+          <i class="fa fa-clock-four black contact-card-icons"></i>
+          <h4>Timing</h4>
+          <p>Mon - Sat 8:00AM - 10:00PM</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3 class="black">Drop us a Feedback</h3>
+        <p>Feel free to contact us using the form below.</p>
+        <form>
+          <input type="text" placeholder="Your Name*" required />
+          <input type="email" placeholder="Email Address*" required />
+          <input type="text" placeholder="Phone Number*" required />
+          <input type="text" placeholder="Your Subject" />
+          <select>
+            <option>I Want to Discuss About</option>
+            <option>Makeup Services</option>
+            <option>Bridal Package</option>
+            <option>Other Inquiries</option>
+          </select>
+          <input type="text" placeholder="Company Name" />
+          <textarea placeholder="Your Message" rows="5"></textarea>
+          <button type="submit" disabled>SUBMIT MESSAGE</button>
+        </form>
+      </div>
+
+      <!-- Map -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.697947887903!2d80.2393324!3d12.9478952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d107e94a529%3A0x568756a0e8c0e294!2sNithya%20Makeup%20Artist!5e0!3m2!1sen!2sin!4v1707821900000!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About Us Section -->
+        <div class="footer-section">
+          <h3 class="footer-title"><span>|</span> About Us</h3>
+          <img src="your-image.jpg" alt="About Us Image" class="footer-img" />
+          <p class="footer-text">
+            <b>Nithya Makeup Artist</b> – a passionate makeup artist, enhancing
+            beauty and confidence with every brushstroke. From flawless bridal
+            looks to stunning transformations, I bring creativity and precision
+            to every makeup journey. ✨ Let’s create magic together!
+            <br />
+            <i>Building dreams one brush at a time.</i>
+          </p>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="footer-section">
+          <h3 class="footer-title"><span>|</span> Contact Info</h3>
+          <p class="footer-text">
+            Feel free to contact us and one of our consultants will contact you
+            within one business day.
+          </p>
+          <p class="border-bottom"></p>
+          <p class="footer-text">
+            <i class="fa-solid fa-location-dot yellow-color"></i>
+            <span class="footer-address">Neelankarai, Chennai-600041</span>
+          </p>
+          <p class="footer-text">
+            <i class="fa-solid fa-phone-volume yellow-color"></i>
+            <span class="footer-address1"
+              >+91 97512 30377 / 91 96000 38927</span
+            >
+          </p>
+          <p class="footer-text">
+            <i class="fa-solid fa-envelope yellow-color"></i>
+            <span class="footer-address1">nithyaglowshine@gmail.com</span>
+          </p>
+        </div>
+
+        <!-- Menu Section -->
+        <div class="footer-section">
+          <h3 class="footer-title"><span>|</span> Menu</h3>
+          <ul class="footer-menu">
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-house yellow-color"></i
+                >&nbsp;&nbsp;Home</a
+              >
+            </li>
+            <p class="border-bottom"></p>
+            <li>
+              <a href="about.html"
+                ><i class="fa-solid fa-user yellow-color"></i
+                >&nbsp;&nbsp;About</a
+              >
+            </li>
+            <p class="border-bottom"></p>
+            <li>
+              <a href="services.html"
+                ><i class="fa-solid fa-briefcase yellow-color"></i
+                >&nbsp;&nbsp;Services</a
+              >
+            </li>
+            <p class="border-bottom"></p>
+            <li>
+              <a href="gallery.html"
+                ><i class="fa-solid fa-image yellow-color"></i
+                >&nbsp;&nbsp;Gallery</a
+              >
+            </li>
+            <p class="border-bottom"></p>
+            <li>
+              <a href="contact.html"
+                ><i class="fa-solid fa-envelope yellow-color"></i
+                >&nbsp;&nbsp;Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Follow Us Section -->
+        <div class="footer-section">
+          <h3 class="footer-title"><span>|</span> Follow Us</h3>
+          <div class="footer-icons">
+            <a
+              href="https://www.instagram.com/nithyamakeupartist_j"
+              target="_blank"
+              ><i class="fab fa-instagram black"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@NithyaMakeupArtist"
+              target="_blank"
+              ><i class="fab fa-youtube black"></i
+            ></a>
+            <a href="https://wa.me/9751230377" target="_blank"
+              ><i class="fab fa-whatsapp black"></i
+            ></a>
+          </div>
+          <div class="footer-icons mt-4">
+            <a href="mailto:nithyaglowshine@gmail.com" target="_blank"
+              ><i class="fab fa-google black"></i
+            ></a>
+            <!-- <a href="#"><i class="fab fa-linkedin black"></i></a>
+            <a href="#"><i class="fab fa-facebook-f black"></i></a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer-copyright">
+        © Copyright 2025 Jeya Raman All Rights Reserved
+      </div>
+    </footer>
+
+    <script>
+      // Responsive Navbar Toggle
+      function toggleMenu() {
+        const nav = document.querySelector(".nav");
+        nav.style.display = nav.style.display === "block" ? "none" : "block";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // ✅ Load external HTML components dynamically
+        // function loadComponent(id, file) {
+        //   fetch(file)
+        //     .then((response) => response.text())
+        //     .then((data) => {
+        //       document.getElementById(id).innerHTML = data;
+        //     })
+        //     .catch((error) => console.error(`Error loading ${file}:`, error));
+        // }
+
+        // loadComponent("header", "header.html");
+        // loadComponent("about", "about.html");
+        // loadComponent("services", "services.html");
+        // loadComponent("gallery", "gallery.html");
+        // loadComponent("contact", "contact.html");
+        // loadComponent("footer", "footer.html");
+
+        // Active Menu
+        let currentUrl =
+          window.location.pathname.split("/").pop() || "index.html";
+
+        // console.log(currentUrl, "currentUrl");
+        const navLinks = document.querySelectorAll(".nav a");
+
+        navLinks.forEach((link) => {
+          let linkHref = link.getAttribute("href");
+
+          if (currentUrl === "" || currentUrl === "index.html") {
+            currentUrl = "index.html"; // Default to index.html if empty
+          }
+
+          // Make sure it exactly matches the filename
+          if (linkHref.endsWith(currentUrl)) {
+            link.classList.add("active-menu");
+          }
+        });
+
+        // ✅ Slider Functionality
+        let index = 0;
+        const slides = document.querySelector(".slides");
+        const dots = document.querySelectorAll(".dot");
+
+        function moveSlide(step) {
+          index += step;
+          if (index >= 4) index = 0;
+          if (index < 0) index = 2;
+          updateSlider();
+        }
+
+        function currentSlide(n) {
+          index = n;
+          updateSlider();
+        }
+
+        function updateSlider() {
+          slides.style.transform = `translateX(${-index * 100}%)`;
+          dots.forEach((dot) => dot.classList.remove("active"));
+          dots[index].classList.add("active");
+        }
+
+        setInterval(() => moveSlide(1), 5000); // Auto-slide every 5 sec
+      });
+    </script>
+  </body>
+</html>
