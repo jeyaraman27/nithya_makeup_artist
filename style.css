@@ -197,6 +197,7 @@ body {
   border-radius: 10px;
   pointer-events: none;
   -webkit-user-drag: none;
+  box-shadow: 0px 9px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Gallery */
@@ -205,7 +206,7 @@ body {
   height: 400px;
   border-radius: 10px;
   object-fit: contain;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 9px 8px rgba(0, 0, 0, 0.3);
   pointer-events: none;
   -webkit-user-drag: none;
 }
@@ -215,7 +216,7 @@ body {
   height: 400px;
   border-radius: 10px;
   object-fit: contain;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 9px 8px rgba(0, 0, 0, 0.3);
   -webkit-user-drag: none;
 }
 
@@ -387,11 +388,12 @@ iframe {
 }
 
 .footer-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 50%;
+  border-radius: 10%;
   pointer-events: none;
   -webkit-user-drag: none;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 .footer-text {
